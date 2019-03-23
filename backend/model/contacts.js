@@ -7,20 +7,24 @@ const Schema = mongoose.Schema
 const ContactsSchema = Schema({
     name: {
         type: String,
+        required: true,
         validate: {
             validator: validateOnlyLetters,
             message: props => `${props.value} is not a valid name`
-          }
+        }
+          
     },
     lastName: {
         type: String,
+        required: true,
         validate: {
             validator: validateOnlyLetters,
             message: props => `${props.value} is not a valid Last name`
-          }
+        }
     },
     company: {
         type: String,
+        sparse: true,
         validate: {
             validator: validateAlphanumeric,
             message: props => `${props.value} is not a valid company name`
@@ -28,6 +32,7 @@ const ContactsSchema = Schema({
     },
     phoneNumber: {
         type: Number,
+        sparse: true,
         validate: {
             validator: validateOnlyNumbers,
             message: props => `${props.value} is not a valid phone number`
@@ -36,6 +41,7 @@ const ContactsSchema = Schema({
     },
     email: {
         type: String,
+        required: true,
         validate: {
             validator: validateMail,
             message: props => `${props.value} is not a valid email`

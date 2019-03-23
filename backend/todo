@@ -1,1 +1,28 @@
 todo
+
+
+
+
+paginacion que es? es lo que sigue de hacer >:^)
+
+http request. desde el frontend.
+
+lsof -i -P -n
+kill idprocess
+
+
+problems:
+    ✔ unique is counts null as unique @done(19-03-23 12:15)
+        solutitions
+        solved by: https://stackoverflow.com/questions/7955040/mongodb-mongoose-unique-if-not-null
+        
+things to solve:
+    ☐ pagination
+
+    ☐ make the page view
+        ☐ using bootstrap or something
+
+    ☐ implement atlasdb
+
+    ☐ what to do if a douplicate error comes from the db
+
